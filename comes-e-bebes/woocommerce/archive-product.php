@@ -59,8 +59,8 @@ do_action('woocommerce_before_main_content');
 			<input>
 		</div>
 		<div class="searchs-right-div">
-		<p>Filtro de preço</p>
-		De: <input> Até: <input>
+			<p>Filtro de preço</p>
+			De: <input> Até: <input>
 
 
 	</section>
