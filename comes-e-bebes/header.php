@@ -14,7 +14,19 @@
 <body <?php body_class(); ?>>
 
 
-<header>
-    HEADER
+<header> <!-- SUBSTITUIR PRO WORDPRESS DEPOIS (NÃO ESQUECER) -->
+    <div class="inner_header">
+        <div class="left_header">
+            <?php the_custom_logo();?>
+            <?php get_search_form(); ?>
+        </div>
+
+
+        <div class="rigth_header">
+            <button>Faça um pedido</button>
+            <button>Faça um pedido</button>
+            <button>Faça um pedido</button>
+        </div>
+    </div>
 </header>
 
