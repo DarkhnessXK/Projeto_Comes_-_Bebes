@@ -13,11 +13,4 @@
 </head>
 <body <?php body_class(); ?>>
 
-<header>
-        <a href="" id="logo"><img src="images/comesbebeslogo.png"></a>
-        <a href="" id="pesquisa"><img src="images/pesquisa.png"></a>
-        <input type="text" name="search" id="linha_search">
-        <button id="faca_pedido"><span>Faça um pedido</span></button>
-        <a href="" id="carrinho"><img src="images/carrinho.png"></a>
-        <a href="" id="user"><img src="images/user.png"></a>
-</header>
+<
