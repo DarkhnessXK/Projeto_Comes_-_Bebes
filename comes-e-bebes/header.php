@@ -13,7 +13,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-    <header>
+<header>
         <a href="" id="logo"><img src="images/comesbebeslogo.png"></a>
         <a href="" id="pesquisa"><img src="images/pesquisa.png"></a>
         <input type="text" name="search" id="linha_search">
