@@ -20,5 +20,4 @@
         <button id="faca_pedido"><span>Faça um pedido</span></button>
         <a href="" id="carrinho"><img src="images/carrinho.png"></a>
         <a href="" id="user"><img src="images/user.png"></a>
-    </header>
-
+</header>
