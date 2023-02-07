@@ -52,9 +52,17 @@ do_action('woocommerce_before_main_content');
 	<section class="foods-section">
 		<h2>Pratos</h2>
 		<h3>Comida (da categoria)</h3>
+		<div class="searchs-left-div">
+			<p>Buscar por nome: </p>
+			<input>
+			<p>Ordenado por:</p>
+			<input>
+		</div>
+		<div class="searchs-right-div">
+		<p>Filtro de preço</p>
+		De: <input> Até: <input>
 
-		<p>Buscar por nome: </p>
-		<input>
+
 	</section>
 
 	<!-- end coding sections -->
