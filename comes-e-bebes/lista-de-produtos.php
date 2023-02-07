@@ -32,7 +32,7 @@
             <h2>Pratos</h2>
             <h3>Comida (da categoria)</h3>
 
-            <p>Buscar por nome:</p>
+            <p>Buscar por nome: </p>
             <input>
         </section>
 

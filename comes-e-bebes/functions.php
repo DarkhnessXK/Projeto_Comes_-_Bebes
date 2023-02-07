@@ -19,4 +19,10 @@ include_once(INCLUDES_DIR . '/setup-theme.php');
 add_action('wp_enqueue_scripts', 'comesbebes_enqueue_style');
 add_action('after_theme_support', 'comesbebes_setup-theme');
 
+
+function comes_e_bebes_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'comes_e_bebes_add_woocommerce_support' );
+
 ?>
