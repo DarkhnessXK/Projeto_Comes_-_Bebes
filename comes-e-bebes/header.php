@@ -15,11 +15,11 @@
 
 
     <header>
-    <button type="button"><img src="logo.png"></button>
-    <button type="button"><img src=""></button>
-    <input type="text" name="search" id="search"
-    <button type="button">Faça um pedido</button>
-    <button type="button"><img src="carrinho.png"></button>
-    <button type="button"><img src="user.png"></button>
-</header>
+        <button type="button"><img src="images/logo.png"></button>
+        <button type="button"><img src="images/pesquisa.png"></button>
+        <input type="text" name="search" id="search">
+        <button type="button">Faça um pedido</button>
+        <button type="button"><img src="images/carrinho.png"></button>
+        <button type="button"><img src="images/user.png"></button>
+    </header>
 
