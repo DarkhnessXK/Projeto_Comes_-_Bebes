@@ -14,7 +14,7 @@
 <body <?php body_class(); ?>>
 
 
-<header> <!-- SUBSTITUIR PRO WORDPRESS DEPOIS (NÃO ESQUECER) -->
+<header>
     <div class="inner_header">
         <div class="left_header">
             <?php the_custom_logo();?>
@@ -23,9 +23,11 @@
 
 
         <div class="rigth_header">
-            <button>Faça um pedido</button>
-            <button>Faça um pedido</button>
-            <button>Faça um pedido</button>
+            
+            <div class="pedido_button"><a href="/">Faça um pedido</a></div>
+            <a href="/"><img class="header_icon" src="<?php echo IMAGES_DIR . "/cart.png"?>" alt=""></a>
+            <a href="/"><img class="header_icon" src="<?php echo IMAGES_DIR . "/account.png"?>" alt=""></a>
+
         </div>
     </div>
 </header>

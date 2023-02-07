@@ -64,4 +64,37 @@ header {
 
 }
 
+.rigth_header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+   
+}
+
+.pedido_button a {
+	background-color:#F5C661;
+	border:1px solid #F5C661;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:9px 20px;
+	text-decoration:none;
+}
+.pedido_button:hover a {
+	background-color:#fcbe39;
+}
+.pedido_button:active a {
+	position:relative;
+	top:1px;
+}
+
+
+.header_icon {
+    width: 35px;
+}
+
+        
 
