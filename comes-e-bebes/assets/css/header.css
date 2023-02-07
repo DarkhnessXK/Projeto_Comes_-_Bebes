@@ -1,0 +1,69 @@
+header {
+    position: absolute;
+    width: 1440px;
+    height: 77px;
+    left: 1px;
+    top: 0px;
+    background: #7A247D;
+}
+
+#logo{
+    position: absolute;
+    left: 13.75%;
+    right: 80.9%;
+    top: 16.88%;
+    bottom: 18.18%;
+    background: url(comesebebeslogo (1));
+}
+
+#pesquisa{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 321px;
+    top: 24px
+}
+
+#linha_search {
+    position: absolute;
+    width: 412px;
+    height: 0px;
+    left: 314px;
+    top: 52px;
+    border: 2px solid #F5C661;
+}
+
+#faca_pedido {
+    position: absolute;
+    left: 64.58%;
+    right: 22.78%;
+    top: 23.38%;
+    bottom: 23.38%;
+    background: #F5C661;
+}
+
+#carrinho {
+    position: absolute;
+    left: 78.96%;
+    right: 17.71%;
+    top: 22.08%;
+    bottom: 23.38%;
+}
+
+#user {
+    position: absolute;
+    left: 84.03%;
+    right: 13.06%;
+    top: 22.08%;
+    bottom: 23.38%;
+}
+
+span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 23px;
+    color: #000000;
+}
+
