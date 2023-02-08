@@ -17,6 +17,6 @@ include_once(INCLUDES_DIR . '/setup-theme.php');
 //Ganchos
 
 add_action('wp_enqueue_scripts', 'comesbebes_enqueue_style');
-add_action('after_theme_support', 'comesbebes_setup-theme');
+add_action('after_setup_theme', 'comesbebes_setup_theme');
 
 ?>

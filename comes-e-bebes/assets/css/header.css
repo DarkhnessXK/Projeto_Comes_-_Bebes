@@ -1,69 +1,100 @@
 header {
-    position: absolute;
-    width: 1440px;
-    height: 77px;
-    left: 1px;
-    top: 0px;
-    background: #7A247D;
+    background-color: #7A247D;
+
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: center;
 }
 
-#logo{
-    position: absolute;
-    left: 13.75%;
-    right: 80.9%;
-    top: 16.88%;
-    bottom: 18.18%;
-    background: url(comesebebeslogo (1));
+.inner_header {
+    max-width: 1440px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-#pesquisa{
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 321px;
-    top: 24px;
+.comesbebes_search_form {
+    width: 100%;
+
+
 }
 
-#linha_search {
-    position: absolute;
-    width: 412px;
-    height: 0px;
-    left: 314px;
-    top: 52px;
-    border: 2px solid #F5C661;
+.search_bar {
+    border: none;
+    border-bottom: solid 2px #F5C661;
+    background: none;
+
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    padding: 5px;
+    padding-left: 30px;
+
+
+    font-size: .9rem;
+    font-family: "Bellota Text", sans-serif;
+    color: #F5C661;
+
+    width: 100%;
 }
 
-#faca_pedido {
+
+.search_bar_icon{
     position: absolute;
-    left: 64.58%;
-    right: 22.78%;
-    top: 23.38%;
-    bottom: 23.38%;
-    background: #F5C661;
 }
 
-#carrinho {
-    position: absolute;
-    left: 78.96%;
-    right: 17.71%;
-    top: 22.08%;
-    bottom: 23.38%;
+.search_bar:focus {
+    outline: none;
 }
 
-#user {
-    position: absolute;
-    left: 84.03%;
-    right: 13.06%;
-    top: 22.08%;
-    bottom: 23.38%;
+
+.left_header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    width: 100%;
+    max-width: 700px;
+
 }
 
-span {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 23px;
-    color: #000000;
+.rigth_header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+   
 }
+
+.pedido_button a {
+	background-color:#F5C661;
+	border:1px solid #F5C661;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:9px 20px;
+	text-decoration:none;
+}
+.pedido_button:hover a {
+	background-color:#fcbe39;
+}
+.pedido_button:active a {
+	position:relative;
+	top:1px;
+}
+
+
+.header_icon {
+    width: 35px;
+}
+
+        
 

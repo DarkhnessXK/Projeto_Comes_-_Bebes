@@ -11,10 +11,22 @@
 </head>
 <body <?php body_class(); ?>>
 
-    <header>
-        <a href="" id="logo"> <img src="images/comesebebeslogo.png"> </a>
-        <a href="" id="pesquisa"> <img src="images/pesquisa.png"> </a>
-        <button id="faca_pedido"><span>Faça um pedido<span></button>
-        <a href="" id="carrinho"> <img src="images/carrinho.png"> </a>
-        <a href="" id="user"> <img src="images/user.png"> </a>
-    </header>
+
+<header>
+    <div class="inner_header">
+        <div class="left_header">
+            <?php the_custom_logo();?>
+            <?php get_search_form(); ?>
+        </div>
+
+
+        <div class="rigth_header">
+            
+            <div class="pedido_button"><a href="/">Faça um pedido</a></div>
+            <a href="/"><img class="header_icon" src="<?php echo IMAGES_DIR . "/cart.png"?>" alt=""></a>
+            <a href="/"><img class="header_icon" src="<?php echo IMAGES_DIR . "/account.png"?>" alt=""></a>
+
+        </div>
+    </div>
+</header>
+
