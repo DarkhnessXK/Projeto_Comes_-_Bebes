@@ -42,10 +42,10 @@ do_action('woocommerce_before_main_content');
 	<section class="category-section">
 		<h2>Escolha uma Categoria</h2>
 		<div class="category-cards">
-			<img>
-			<img>
-			<img>
-			<img>
+			<button type="button"><img src="../assets/images/Nordestina.svg"></button>
+			<button type="button"><img src="../assets/images/Vegana.svg"></button>
+			<button type="button"><img src="../assets/images/Massas.svg"></button>
+			<button type="button"><img src="../assets/images/Japonesa.svg"></button>
 		</div>
 	</section>
 
@@ -55,8 +55,13 @@ do_action('woocommerce_before_main_content');
 		<div class="searchs-left-div">
 			<p>Buscar por nome: </p>
 			<input>
-			<p>Ordenado por:</p>
-			<input>
+			<p><label for="cars">Ordenar Por:</label></p>
+			<select id="cars" name="cars">
+				<option value="preco-crescente">Preço: Crescente</option>
+				<option value="Classificacao-crescente">Classificação: Crescente</option>
+				<option value="preco-decrescente">Preço: Decrescente</option>
+				<option value="Classificacao-decrescente">Classificação: Decrescente</option>
+			</select>
 		</div>
 		<div class="searchs-right-div">
 			<p>Filtro de preço</p>
