@@ -75,3 +75,77 @@
     display: flex;
     gap: 10px;
 }
+
+/* corpo da loja */
+
+.corpo-loja {
+    background-color: #E5E5E5;
+}
+
+h3 {
+    font-family: "Bellota Text" , sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 40px;
+    line-height: 100%;
+    color: #333333;
+    align-self: left;
+    width: 358px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pratos-principais {
+    width: 1047px;
+    width: 100%;
+    height: 259px;
+    margin-top: 48px;
+    margin-left: 196px;
+    margin-bottom: 37px;
+}
+
+h4 {
+    font-family: "Bellota Text", sans-serif;
+    font-style: bold;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 100%;
+    color: #000000;
+    Align: Left
+    Vertical align: Top
+    Fill: Solid
+    #000000
+}
+
+.tipos {
+    width: 240px;
+    height: 210px;
+    margin-top: 19px;
+    margin-right: 29px;
+}
+
+.pratos-do-dia {
+    width: 1047px;
+    width: 100%;
+    margin-left: 196px;
+    margin-bottom: 57px;
+}
+
+.tipos2 {
+    width: 240px;
+    height: 373px;
+    margin-top: 13px;
+    margin-right: 29px;
+}
+
+.button_options{
+    width: 235px;
+    height: 41px;
+    margin-top: 48px;
+    margin-left: 602px;
+    margin-bottom: 48px;
+    color: #F5C661;
+}
+
