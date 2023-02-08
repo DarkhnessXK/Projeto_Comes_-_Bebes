@@ -5,3 +5,26 @@ Author: Equipe Byte Busters
 Author URI: https://injunior.com.br/
 Description: Tema para o restaurante Comes & Bebes.
 */
+
+h3 {
+    font-size: 32px;
+}
+
+.footer-home{
+    background-color: #7A247D;
+    max-height: 576px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.footer-home div:nth-child(2){
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 150px;
+    margin: 30px;
+}

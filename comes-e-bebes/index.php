@@ -8,6 +8,3 @@ INDEX
 
 
 <?php get_footer();?>
-
-
-
