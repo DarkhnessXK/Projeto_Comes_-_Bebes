@@ -52,7 +52,7 @@ do_action('woocommerce_before_main_content');
 	<section class="foods-section">
 		<h2>Pratos</h2>
 		<h3>Comida -->
-			<?php echo get_cat_name(19);
+			<?php echo get_cat_name($category_id = 19);
 			?>
 		</h3>
 		<div class="searchs-left-div">
