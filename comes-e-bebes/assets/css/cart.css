@@ -1,0 +1,169 @@
+#comesbebes_cart{
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    display: flex;
+}
+
+.cart_background_shadow {
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    width: 100%;
+}
+
+.cart_itens_container {
+    height: 100vh;
+    width: fit-content;
+    padding: 20px 40px;
+    background-color: #F5C661;
+    z-index: 3;
+
+
+}
+
+
+
+.cart_title {
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #6A066D;
+}
+
+.cart_itens {
+    margin: 10px 0;
+    padding: 10px 0;
+
+    border-top: 1px #6A066D solid;
+    border-bottom: 1px #6A066D solid;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart_hidden {
+    display: none !important;
+}
+
+.cart_iten {
+    background-color: #D7F6FD;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+}
+
+.cart_image_container {
+    width: 200px;
+    height: 100px;
+}
+
+.cart_product_name {
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: black;
+}
+
+.cart_product_info{
+    width: 100%;
+    height: 100%;
+
+    padding: 10px 10px;
+    display: flex;
+}
+
+.cart_product_info_left{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.cart_product_info_right{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: end;
+    align-items: end;
+
+    width: 100%;
+    height: 100%;
+
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: black;
+
+    
+}
+
+.cart_product_qnt{
+    display: flex;
+
+    border: solid black 1px;
+
+    justify-content: space-between;
+
+    width: 100px;
+
+    background-color: #E7FAFE;
+
+    
+    
+}
+
+.cart_product_qnt_button_minnus {
+    border-right: solid black 1px;
+    padding: 0 10px;
+}
+
+.cart_product_qnt_button_plus {
+    border-left: solid black 1px;
+    padding: 0 10px;
+
+}
+
+.cart_summary {
+    font-family: "Bellota Text", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.cart_checkout_buton_container {
+    width: 100%;
+    text-align: center;
+}
+
+.cart_checkout {
+	background-color:#7E3481;
+	border:1px solid #7E3481;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:14px 70px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #671d69;
+}
+.cart_checkout:hover {
+	background-color:#963699;
+}
+.cart_checkout:active {
+	position:relative;
+	top:1px;
+}
+
+    
