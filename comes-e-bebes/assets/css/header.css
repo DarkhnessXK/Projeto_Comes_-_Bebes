@@ -96,5 +96,9 @@ header {
     width: 35px;
 }
 
+.header_icon:hover {
+    cursor: pointer;
+}
+
         
 
