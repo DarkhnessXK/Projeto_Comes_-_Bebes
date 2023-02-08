@@ -42,16 +42,19 @@ do_action('woocommerce_before_main_content');
 	<section class="category-section">
 		<h2>Escolha uma Categoria</h2>
 		<div class="category-cards">
-			<button type="button"><img src="../assets/images/Nordestina.svg"></button>
-			<button type="button"><img src="../assets/images/Vegana.svg"></button>
-			<button type="button"><img src="../assets/images/Massas.svg"></button>
-			<button type="button"><img src="../assets/images/Japonesa.svg"></button>
+			<button type="button"><img src="<?php echo wp_get_attachment_image_url(22); ?>">Nordestina</button>
+			<button type="button"><img src="<?php echo wp_get_attachment_image_url(19); ?>">Vegana</button>
+			<button type="button"><img src="<?php echo wp_get_attachment_image_url(19); ?>">Massas</button>
+			<button type="button"><img src="<?php echo wp_get_attachment_image_url(21); ?>">Japonesa</button>
 		</div>
 	</section>
 
 	<section class="foods-section">
 		<h2>Pratos</h2>
-		<h3>Comida (da categoria)</h3>
+		<h3>Comida -->
+			<?php echo get_cat_name(19);
+			?>
+		</h3>
 		<div class="searchs-left-div">
 			<p>Buscar por nome: </p>
 			<input>
