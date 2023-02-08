@@ -42,10 +42,14 @@ do_action('woocommerce_before_main_content');
 	<section class="category-section">
 		<h2>Escolha uma Categoria</h2>
 		<div class="category-cards">
-			<button type="button"><img src="<?php echo wp_get_attachment_image_url(22); ?>">Nordestina</button>
-			<button type="button"><img src="<?php echo wp_get_attachment_image_url(19); ?>">Vegana</button>
-			<button type="button"><img src="<?php echo wp_get_attachment_image_url(19); ?>">Massas</button>
-			<button type="button"><img src="<?php echo wp_get_attachment_image_url(21); ?>">Japonesa</button>
+			<button type="button"><img
+					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(19, 'thumbnail_id', true)); ?>">Nordestina</button>
+			<button type="button"><img
+					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(21, 'thumbnail_id', true)); ?>">Vegana</button>
+			<button type="button"><img
+					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(20, 'thumbnail_id', true)); ?>">Massas</button>
+			<button type="button"><img
+					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(22, 'thumbnail_id', true)); ?>">Japonesa</button>
 		</div>
 	</section>
 
