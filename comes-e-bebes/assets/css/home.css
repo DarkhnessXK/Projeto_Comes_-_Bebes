@@ -80,6 +80,7 @@
 
 .corpo-loja {
     background-color: #E5E5E5;
+    padding-top: 62px;
 }
 
 h3 {
@@ -92,9 +93,7 @@ h3 {
     align-self: left;
     width: 358px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-
+    margin-left: 541px;
 }
 
 .pratos-principais {
@@ -146,6 +145,25 @@ h4 {
     margin-top: 48px;
     margin-left: 602px;
     margin-bottom: 48px;
-    color: #F5C661;
+    background-color: #F5C661;
+    fill: solid;
+    border: 0;
+}
+
+.botao-opcoes p {
+    font-family: "Roboto", sans-serif;
+    font-style: medium;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #000000;
+    fill: solid;
+    font-weight: 500;
+}
+
+.nome-comida {
+    width: 240px;
+    height: 46px;
+    margin-top: 164px;
+    background-color: linear-gradient(#6A066D #8E578FC1 #774079A9 #C4C4C400);
 }
 
