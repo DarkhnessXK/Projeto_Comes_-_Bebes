@@ -23,6 +23,7 @@
         <?php echo date("l");?>
     </div>
 </section>
+
 <div class="footer-home">
     <h3>VISITE NOSSA LOJA FÍSICA</h3>
     <div>
@@ -43,6 +44,5 @@
         <img id="footer_img" src="<?php echo IMAGES_DIR . '/happyfriends.jpg' ?>" alt="happy friends">
     </div>
 </div>
-
 
 <?php get_footer();?>
