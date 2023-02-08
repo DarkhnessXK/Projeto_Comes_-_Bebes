@@ -17,3 +17,7 @@ Description: Tema para o restaurante Comes & Bebes.
     padding: 0;
 
 }
+
+html, body {
+    overflow-x: hidden;
+}
