@@ -17,10 +17,19 @@
     </div>
 
     <div class="pratos-do-dia">
-        <h4>Pratos dos dias de hoje:</h4>
-        <?php echo date("l");?>
+        <h4>Pratos dos dias de hoje: </br>
+        <?php echo date("l");?></h4>
+        <a href="/"><img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia1.jpg"?>" alt=""></a>
+        <a href="/"><img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia2.jpg"?>" alt=""></a>
+        <a href="/"><img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia3.jpg"?>" alt=""></a>
+        <a href="/"><img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia4.jpg"?>" alt=""></a>
     </div>
-</section>
+
+    <div class="botao-opcoes">
+        <button class="button_options">Veja outras opções</button>
+    </div>
+    </section>
+
 
 <div class="footer-home">
     <h3>VISITE NOSSA LOJA FÍSICA</h3>
