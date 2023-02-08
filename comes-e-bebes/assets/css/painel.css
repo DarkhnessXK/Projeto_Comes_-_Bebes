@@ -1,0 +1,32 @@
+
+/**
+p {
+    position: absolute;
+    min-height: 120px;
+    left: 199px;
+    top: 181px;
+    font-family: 'Bellota Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: justify;
+    color: #000000;
+}
+
+fieldset {
+    position: absolute;
+    height: 514.09px;
+    left: 199px;
+    top: 317px;
+}
+
+#button_salvar {
+    position: absolute;
+    width: 289px;
+    height: 41px;
+    left: 575px;
+    top: 897px;
+    background: #7E3481;
+}
+**/
