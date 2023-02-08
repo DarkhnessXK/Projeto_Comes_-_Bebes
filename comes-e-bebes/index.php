@@ -1,13 +1,24 @@
-<?php get_header();?>
+<?php get_header();
 
 
+if(have_posts()){
+    while(have_posts()){
+        the_post();
+        ?>
+        <h1>
+        <?php the_title(); ?>
+        </h1>
+        <main>
+        <?php the_content(); ?>
+        </main>
 
-INDEX
+    <?php
+    }
+}
 
 
-
-
-<?php get_footer();?>
+php get_footer();
+?>
 
 
 
