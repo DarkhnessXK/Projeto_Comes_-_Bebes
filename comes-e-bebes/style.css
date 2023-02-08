@@ -8,6 +8,8 @@ Description: Tema para o restaurante Comes & Bebes.
 
 h3 {
     font-size: 32px;
+    font-family: 'Bellota Text';
+    color: #F4F4F4;
 }
 
 .footer-home{
@@ -18,13 +20,51 @@ h3 {
     align-items: center;
     box-sizing: border-box;
     padding: 30px;
+    overflow: auto;
 }
 
-.footer-home div:nth-child(2){
+.footer-home > div:first-of-type {
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap: 150px;
-    margin: 30px;
+    gap: 120px;
+    margin: 40px;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-content: flex-start;
+}
+
+#footer_img{
+    max-height: 356px;
+}
+
+.icon {
+    max-height: 18.16px;
+}
+
+ul {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul div {
+    display: flex;
+    gap: 10px;
+}
+
+* {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+
+    margin: 0;
+    padding: 0;
+
 }
