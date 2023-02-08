@@ -7,22 +7,22 @@
     <h2>O restaurante para todas as fomes</h2>
 </section>
 
-<?php
-if(have_posts()){
-    while(have_posts()){
-        the_post();
-        ?>
-        <h1>
-        <?php the_title(); ?>
-        </h1>
-        <main>
-        <?php the_content(); ?>
-        </main>
+<section class="corpo-loja">
+    <h3>CONHEÇA NOSSA LOJA</h3>
 
-    <?php
-    }
-}
-?>
+    <div class="pratos-principais">
+        <h4>Tipo de pratos principais</h4>
+        <a href="/"><img class="tipos" src="<?php echo IMAGES_DIR . "/nordestina.jpg"?>" alt=""></a>
+        <a href="/"><img class="tipos" src="<?php echo IMAGES_DIR . "/vegana.jpg"?>" alt=""></a>
+        <a href="/"><img class="tipos" src="<?php echo IMAGES_DIR . "/massas.jpg"?>" alt=""></a>
+        <a href="/"><img class="tipos" src="<?php echo IMAGES_DIR . "/japonesa.jpg"?>" alt=""></a>
+    </div>
+
+    <div class="pratos-do-dia">
+        <h4>Pratos dos dias de hoje:</h4>
+        <?php echo date("l");?>
+    </div>
+</section>
 <div class="footer-home">
     <h3>VISITE NOSSA LOJA FÍSICA</h3>
     <div>
