@@ -10,10 +10,9 @@ if(have_posts()){
         <main>
         <?php the_content(); ?>
         </main>
-
-    <?php
     }
 }
 
+<?php
 php get_footer();
 ?>
