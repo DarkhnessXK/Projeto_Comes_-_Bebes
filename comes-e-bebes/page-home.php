@@ -7,6 +7,23 @@
     <h2>O restaurante para todas as fomes</h2>
 </section>
 
+<section class="corpo-loja">
+    <h3>CONHEÇA NOSSA LOJA</h3>
+
+    <div class="pratos-principais">
+        <h4>Tipo de pratos principais</h4>
+        <a href="/"><img class="tipos" src="<?php echo IMAGES_DIR . "/nordestina.jpg"?>" alt=""></a>
+        <a href="/"><img class="tipos" src="<?php echo IMAGES_DIR . "/vegana.jpg"?>" alt=""></a>
+        <a href="/"><img class="tipos" src="<?php echo IMAGES_DIR . "/massas.jpg"?>" alt=""></a>
+        <a href="/"><img class="tipos" src="<?php echo IMAGES_DIR . "/japonesa.jpg"?>" alt=""></a>
+    </div>
+
+    <div class="pratos-do-dia">
+        <h4>Pratos dos dias de hoje:</h4>
+        <?php echo date("l");?>
+    </div>
+</section>
+
 <div class="footer-home">
     <h3>VISITE NOSSA LOJA FÍSICA</h3>
     <div>
