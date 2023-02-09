@@ -101,7 +101,8 @@ header {
 }
 
 .woocommerce-products-header{
-    background-color: #E5E5E5;
+    background-color: #E7FAFE
+    ;
     display: flex;
     flex-direction: column;
     
@@ -114,7 +115,8 @@ header {
 }
 
 .site-main{
-    background-color: #E5E5E5;
+    background-color: #E7FAFE
+    ;
 }
 
 .category-h2{
