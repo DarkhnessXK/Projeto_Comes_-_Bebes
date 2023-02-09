@@ -78,7 +78,7 @@
 </div>
 
 
-<header>
+<header classs="header-general">
     <div class="inner_header">
         <div class="left_header">
             <?php the_custom_logo();?>
