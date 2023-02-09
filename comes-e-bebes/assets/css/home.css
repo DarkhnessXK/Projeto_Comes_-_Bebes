@@ -171,3 +171,20 @@ h4 {
     position: absolute;
     border-radius: 0px;
 }
+
+.pratos-principais p {
+    font-family: "Bellota Text", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30px;
+    line-height: 100%;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 192px;
+    color: #E5E5E5;
+    fill: solid;
+    margin-left: 8px;
+    
+}
