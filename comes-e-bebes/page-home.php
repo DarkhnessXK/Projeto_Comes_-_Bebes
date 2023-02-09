@@ -11,8 +11,9 @@
     <div class="pratos-principais">
         <h4>Tipo de pratos principais</h4>
 
-        <a href="/"><img class="pratos-nomes" src="<?php echo IMAGES_DIR . "/gradienteroxo.png"?>"><img class="tipos" src="<?php echo IMAGES_DIR . "/nordestina.jpg"?>" alt="Comida Nordestina">
-        </a>            
+        <a href="/"><img class="pratos-nomes" src="<?php echo IMAGES_DIR . "/gradienteroxo.png"?>"><p>NORDESTINA</p><img class="tipos" src="<?php echo IMAGES_DIR . "/nordestina.jpg"?>" alt="Comida Nordestina">
+        </a> 
+                   
 
         <a href="/"><img class="pratos-nomes" src="<?php echo IMAGES_DIR . "/gradienteroxo.png"?>"><img class="tipos" src="<?php echo IMAGES_DIR . "/vegana.jpg"?>" alt="Comida Vegana">
         </a>
@@ -25,7 +26,7 @@
     </div>
 
     <div class="pratos-do-dia">
-        <h4>Pratos dos dias de hoje: </br>
+        <h4>Pratos do dia de hoje: </br>
             <?php setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
             date_default_timezone_set('America/Sao_Paulo');
             echo ucwords(strftime('%A', strtotime('today')));?>
