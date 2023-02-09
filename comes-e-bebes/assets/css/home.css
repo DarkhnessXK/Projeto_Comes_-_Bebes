@@ -112,10 +112,6 @@ h4 {
     line-height: 30px;
     line-height: 100%;
     color: #000000;
-    Align: Left
-    Vertical align: Top
-    Fill: Solid
-    #000000
 }
 
 .tipos {
@@ -160,10 +156,18 @@ h4 {
     font-weight: 500;
 }
 
-.nome-comida {
+.pratos-nomes {
     width: 240px;
     height: 46px;
-    margin-top: 164px;
-    background-color: linear-gradient(#6A066D #8E578FC1 #774079A9 #C4C4C400);
+    margin-top: 183px;
+    position: absolute;
+    border-radius: 0px;  
 }
 
+.pratos-dia-nomes {
+    height: 105px;
+    width: 240px;
+    margin-top: 282px;
+    position: absolute;
+    border-radius: 0px;
+}
