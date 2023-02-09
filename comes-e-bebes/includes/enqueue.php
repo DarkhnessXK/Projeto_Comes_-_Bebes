@@ -13,6 +13,8 @@ function comesbebes_enqueue_style(){
     wp_register_style('comesbebes-cart', STYLE_DIR . '/cart.css', [], '1.0.0', false);
     wp_register_style('comesbebes-home', STYLE_DIR . '/home.css', [], '1.0.0', false);
     wp_register_style('comesbebes-painel', STYLE_DIR . '/painel.css', [], '1.0.0', false);
+    wp_register_style('comesbebes-checkout-form', STYLE_DIR . '/checkout-form.css', [], '1.0.0', false);
+
     
     wp_enqueue_style('comesbebes-bellota-text-font');
     wp_enqueue_style('comesbebes-roboto-font');
@@ -24,12 +26,13 @@ function comesbebes_enqueue_style(){
     wp_enqueue_style('comesbebes-cart');
     wp_enqueue_style('comesbebes-home');
     wp_enqueue_style('comesbebes-painel');
+    wp_enqueue_style('comesbebes-checkout-form');
+    
 }
 
 
 function comesbebes_enqueue_scripts(){
     wp_enqueue_script( 'comesbebes_cart', JS_DIR . '/cart.js', array(), '1.0.0', true );
-
 }
 
 
