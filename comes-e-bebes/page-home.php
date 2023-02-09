@@ -6,7 +6,7 @@
 </section>
 
 <section class="corpo-loja">
-    <h3>CONHEÇA NOSSA LOJA</h3>
+    <h3 class="h3-custom">CONHEÇA NOSSA LOJA</h3>
 
     <div class="pratos-principais">
         <h4>Tipo de pratos principais</h4>
@@ -51,7 +51,7 @@
 
 
 <div class="footer-home">
-    <h3>VISITE NOSSA LOJA FÍSICA</h3>
+    <h3 class="h3-custom">VISITE NOSSA LOJA FÍSICA</h3>
     <div>
         <div class="map">
             <div style="overflow:hidden;width:250px;position:relative;"></div>

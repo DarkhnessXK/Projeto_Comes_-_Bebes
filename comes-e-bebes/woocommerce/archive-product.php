@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The Template for displaying product archives, including the main shop page which is a post type archive
@@ -26,21 +27,22 @@ get_header('shop');
  * @hooked woocommerce_breadcrumb - 20
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
-do_action('woocommerce_before_main_content');
+
+
+
+ /**do_action('woocommerce_before_main_content');*/
 
 ?>
 <header class="woocommerce-products-header">
 	<?php if (apply_filters('woocommerce_show_page_title', true)): ?>
-		<h1 class="woocommerce-products-header__title page-title">
-			<?php woocommerce_page_title(); ?>
-		</h1>
+
 	<?php endif; ?>
 
 
 	<!-- coding sections -->
 
 	<section class="category-section">
-		<h2>Escolha uma Categoria</h2>
+		<h2 class="category-h2">Selecione uma Categoria</h2>
 		<div class="category-cards">
 			<button type="button"><img
 					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(19, 'thumbnail_id', true)); ?>">Nordestina</button>
@@ -54,11 +56,13 @@ do_action('woocommerce_before_main_content');
 	</section>
 
 	<section class="foods-section">
-		<h2>Pratos</h2>
-		<h3>Comida -->
+		<h2 class=category-h2>Pratos</h2>
+		<h3 class="foods-h3"> Comida -->
 			<?php echo get_cat_name($category_id = 19);
 			?>
+
 		</h3>
+		<br>
 		<div class="searchs-left-div">
 			<p>Buscar por nome: </p>
 			<input>
@@ -148,7 +152,9 @@ do_action('woocommerce_after_main_content');
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-do_action('woocommerce_sidebar');
+
+
+/**do_action('woocommerce_sidebar'); */
 
 
 get_footer('shop');
