@@ -15,6 +15,9 @@ function comes_e_bebes_add_woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
+function comesbebes_edit_account_painel() {
+    add_edit_account_form( 'woocommerce');
+}
 
 //Includes
 
@@ -31,6 +34,7 @@ add_action('after_theme_support', 'comesbebes_setup-theme');
 add_action( 'after_setup_theme', 'comes_e_bebes_add_woocommerce_support' );
 
 add_action( 'wp_enqueue_scripts', 'comesbebes_enqueue_scripts' );
+add_action ('woocommerce_after_edit_account_form', 'comesbebes_edit_account_painel');
 
 
 
