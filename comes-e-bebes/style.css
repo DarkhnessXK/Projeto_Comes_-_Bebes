@@ -38,6 +38,11 @@ html, body {
     justify-content: center;
 }
 
+.category-button{
+    display: flex;
+    flex-direction: column;
+}
+
 .site-main{
     background-color: #E7FAFE;
 }

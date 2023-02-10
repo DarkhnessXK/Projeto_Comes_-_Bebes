@@ -48,13 +48,13 @@ get_header('shop');
 	<section class="category-section">
 		<h2 class="category-h2">Selecione uma Categoria</h2>
 		<div class="category-cards">
-			<button type="button"><img
+			<button type="button" class="category-button"><img
 					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(19, 'thumbnail_id', true)); ?>">Nordestina</button>
-			<button type="button"><img
+			<button type="button" class="category-button"><img
 					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(21, 'thumbnail_id', true)); ?>">Vegana</button>
-			<button type="button"><img
+			<button type="button" class="category-button"><img
 					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(20, 'thumbnail_id', true)); ?>">Massas</button>
-			<button type="button"><img
+			<button type="button" class="category-button"><img
 					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(22, 'thumbnail_id', true)); ?>">Japonesa</button>
 		</div>
 	</section>
