@@ -41,7 +41,21 @@ html, body {
 .category-button{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border: none;
+    background: linear-gradient(92.1deg, #6A066D 0%, rgba(142, 87, 143, 0.757243) 71.87%, rgba(119, 64, 121, 0.661458) 99.99%, rgba(196, 196, 196, 0) 100%);
+    color: white;
+    font-family: 'Bellota Text';
+    font-size: 1.8rem;
 }
+
+.category-button:hover{
+    border: 3px solid #C839CD;
+    
+      
+}
+
 
 .site-main{
     background-color: #E7FAFE;
