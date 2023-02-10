@@ -83,7 +83,7 @@
     padding-top: 62px;
 }
 
-/**h3 {
+.h3-custom {
     font-family: "Bellota Text" , sans-serif;
     font-style: normal;
     font-size: 2rem;
@@ -96,7 +96,7 @@
     margin-left: 541px;
 }
 
-h4 {
+.h4-custom {
     font-family: "Bellota Text", sans-serif;
     font-style: bold;
     font-size: 1.5rem;
@@ -104,7 +104,7 @@ h4 {
     line-height: 100%;
     color: #000000;
 }
-**/
+
 .pratos-principais {
     width: 1047px;
     width: 100%;
