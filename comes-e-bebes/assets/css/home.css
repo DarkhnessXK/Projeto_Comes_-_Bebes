@@ -157,7 +157,7 @@
     font-weight: 500;
 }
 
-.pratos-nomes {
+.pratos-nome-fundo {
     width: 240px;
     height: 46px;
     margin-top: 183px;
@@ -165,7 +165,7 @@
     border-radius: 0px;  
 }
 
-.pratos-dia-nomes {
+.pratos-dia-nome-fundo {
     height: 105px;
     width: 240px;
     margin-top: 282px;
@@ -173,7 +173,7 @@
     border-radius: 0px;
 }
 
-.pratos-principais p {
+.texto1 {
     font-family: "Bellota Text", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
@@ -186,6 +186,54 @@
     margin-top: 192px;
     color: #E5E5E5;
     fill: solid;
-    margin-left: 8px;
-    
+    margin-left: 8px;  
 }
+
+.carrinho-individual {
+    height: 37px;
+    width: 40px;
+    left: 385px;
+    border-radius: 0px;
+    position:absolute;
+    background-color: #F5C661;
+    padding: 2.5px 3.5px 2.5px 2.5px;
+    margin-top: 343px;
+    margin-bottom: 7px;
+    margin-right: 11px;
+}
+
+
+.prato-individual-dia {
+    font-family: "Bellota Text", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 23px;
+    line-height: 100%;
+    letter-spacing: 0em;
+    text-align: left;
+    fill: Solid;
+    color: #FAFAFA;
+    position: absolute;
+    margin-top: 293px;
+}
+
+.preco-individual-dia {
+    font-family: "Comic Neue", cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 28px;
+    line-height: 100%;
+    letter-spacing: 0em;
+    text-align: left;
+    fill: Solid;
+    color:#FAFAFA;
+    position: absolute;
+    margin-top: 356px;
+    margin-left: 4px;
+}
+
+
+
+
+
+

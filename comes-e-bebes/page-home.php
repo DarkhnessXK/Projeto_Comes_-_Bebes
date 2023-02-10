@@ -11,17 +11,17 @@
     <div class="pratos-principais">
         <h4 class="h4-custom">Tipo de pratos principais</h4>
 
-        <a href="/"><img class="pratos-nomes" src="<?php echo IMAGES_DIR . "/gradienteroxo.png"?>"><p>NORDESTINA</p><img class="tipos" src="<?php echo IMAGES_DIR . "/nordestina.jpg"?>" alt="Comida Nordestina">
+        <a href="/"><img class="pratos-nome-fundo" src="<?php echo IMAGES_DIR . "/gradienteroxo.png"?>"><span class="texto1">NORDESTINA</span><img class="tipos" src="<?php echo IMAGES_DIR . "/nordestina.jpg"?>" alt="Comida Nordestina">
         </a> 
                    
 
-        <a href="/"><img class="pratos-nomes" src="<?php echo IMAGES_DIR . "/gradienteroxo.png"?>"><img class="tipos" src="<?php echo IMAGES_DIR . "/vegana.jpg"?>" alt="Comida Vegana">
+        <a href="/"><img class="pratos-nome-fundo" src="<?php echo IMAGES_DIR . "/gradienteroxo.png"?>"><span class="texto1">VEGANA</span><img class="tipos" src="<?php echo IMAGES_DIR . "/vegana.jpg"?>" alt="Comida Vegana">
         </a>
 
-        <a href="/"><img class="pratos-nomes" src="<?php echo IMAGES_DIR . "/gradienteroxo.png"?>"><img class="tipos" src="<?php echo IMAGES_DIR . "/massas.jpg"?>" alt="Massas">
+        <a href="/"><img class="pratos-nome-fundo" src="<?php echo IMAGES_DIR . "/gradienteroxo.png"?>"><span class="texto1">MASSAS</span><img class="tipos" src="<?php echo IMAGES_DIR . "/massas.jpg"?>" alt="Massas">
         </a>
 
-        <a href="/"><img class="pratos-nomes" src="<?php echo IMAGES_DIR . "/gradienteroxo.png"?>"><img class="tipos" src="<?php echo IMAGES_DIR . "/japonesa.jpg"?>" alt="Comida Japonesa">
+        <a href="/"><img class="pratos-nome-fundo" src="<?php echo IMAGES_DIR . "/gradienteroxo.png"?>"><span class="texto1">JAPONESA</span><img class="tipos" src="<?php echo IMAGES_DIR . "/japonesa.jpg"?>" alt="Comida Japonesa">
         </a>
     </div>
 
@@ -32,16 +32,37 @@
             echo ucwords(strftime('%A', strtotime('today')));?>
         </h4>
 
-        <a href="/"><img class="pratos-dia-nomes" src="<?php echo IMAGES_DIR . "/gradienteroxo_grande.png"?>"><img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia1.jpg"?>" alt="Prato do dia  1">
+        <a href="/">
+            <img class="pratos-dia-nome-fundo" src="<?php echo IMAGES_DIR . "/gradienteroxo_grande.png"?>">
+            <span class="preco-individual-dia">R$ 32,00</span>
+            <span class="prato-individual-dia">Nome do prato</span>
+            <img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia1.jpg"?>" alt="Prato do dia  1">
+            <img class="carrinho-individual" src="<?php echo IMAGES_DIR . "/carrinhoicon.png"?>"> 
         </a>
 
-        <a href="/"><img class="pratos-dia-nomes" src="<?php echo IMAGES_DIR . "/gradienteroxo_grande.png"?>"><img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia2.jpg"?>" alt="Prato do dia 2">
+        <a href="/">
+            <img class="pratos-dia-nome-fundo" src="<?php echo IMAGES_DIR . "/gradienteroxo_grande.png"?>">
+            <span class="preco-individual-dia">R$ 32,00</span>
+            <span class="prato-individual-dia">Nome do prato</span>
+            <img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia2.jpg"?>" alt="Prato do dia 2">
+            <img class="carrinho-individual" src="<?php echo IMAGES_DIR . "/carrinhoicon.png"?>">
+            
         </a>
 
-        <a href="/"><img class="pratos-dia-nomes" src="<?php echo IMAGES_DIR . "/gradienteroxo_grande.png"?>"><img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia3.jpg"?>" alt="Prato do dia 3">
+        <a href="/">
+            <img class="pratos-dia-nome-fundo" src="<?php echo IMAGES_DIR . "/gradienteroxo_grande.png"?>">
+            <span class="preco-individual-dia">R$ 32,00</span>
+            <span class="prato-individual-dia">Nome do prato</span>
+            <img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia3.jpg"?>" alt="Prato do dia 3">
+            <img class="carrinho-individual" src="<?php echo IMAGES_DIR . "/carrinhoicon.png"?>">
         </a>
 
-        <a href="/"><img class="pratos-dia-nomes" src="<?php echo IMAGES_DIR . "/gradienteroxo_grande.png"?>"><img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia4.jpg"?>" alt="Prato do dia 4">
+        <a href="/">
+            <img class="pratos-dia-nome-fundo" src="<?php echo IMAGES_DIR . "/gradienteroxo_grande.png"?>">
+            <span class="preco-individual-dia">R$ 32,00</span>
+            <span class="prato-individual-dia">Nome do prato</span>
+            <img class="tipos2" src="<?php echo IMAGES_DIR . "/pratododia4.jpg"?>" alt="Prato do dia 4">
+            <img class="carrinho-individual" src="<?php echo IMAGES_DIR . "/carrinhoicon.png"?>">        
         </a>
     </div>
 
