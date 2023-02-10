@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The Template for displaying product archives, including the main shop page which is a post type archive
@@ -30,7 +29,7 @@ get_header('shop');
 
 
 
- /**do_action('woocommerce_before_main_content');*/
+/**do_action('woocommerce_before_main_content');*/
 
 ?>
 <header class="woocommerce-products-header">
@@ -66,13 +65,6 @@ get_header('shop');
 		<div class="searchs-left-div">
 			<p>Buscar por nome: </p>
 			<input>
-			<p><label for="cars">Ordenar Por:</label></p>
-			<select id="cars" name="cars">
-				<option value="preco-crescente">Preço: Crescente</option>
-				<option value="Classificacao-crescente">Classificação: Crescente</option>
-				<option value="preco-decrescente">Preço: Decrescente</option>
-				<option value="Classificacao-decrescente">Classificação: Decrescente</option>
-			</select>
 		</div>
 		<div class="searchs-right-div">
 			<p>Filtro de preço</p>
