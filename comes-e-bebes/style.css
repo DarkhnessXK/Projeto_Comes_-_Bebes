@@ -51,9 +51,7 @@ html, body {
 }
 
 .category-button:hover{
-    border: 3px solid #C839CD;
-    
-      
+    border: 3px solid #C839CD;      
 }
 
 
@@ -63,7 +61,7 @@ html, body {
 
 .category-h2{
     font-size: 2.5em;
-    padding: 0.7rem;
+    padding-bottom: 0.7rem;
 }
 
 .foods-h3{
@@ -76,7 +74,7 @@ html, body {
 }
 
 .searchs-left-div{
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 .input-search{
@@ -95,7 +93,7 @@ html, body {
 }
 
 .searchs-right-div{
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 .woocommerce-product-gallery__image{
@@ -115,4 +113,12 @@ html, body {
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid #6A066D;
+}
+
+.mid-body-div{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }

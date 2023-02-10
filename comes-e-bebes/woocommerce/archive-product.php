@@ -36,123 +36,127 @@ get_header('shop');
 /**do_action('woocommerce_before_main_content');*/
 
 ?>
+<div class="mid-body-div">
+	<header class="woocommerce-products-header">
+		<?php if (apply_filters('woocommerce_show_page_title', true)): ?>
 
-<header class="woocommerce-products-header">
-	<?php if (apply_filters('woocommerce_show_page_title', true)): ?>
-
-	<?php endif; ?>
-
-
-	<!-- coding sections -->
-
-	<section class="category-section">
-		<h2 class="category-h2">Selecione uma Categoria</h2>
-		<div class="category-cards">
-			<button type="button" class="category-button"><img
-					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(19, 'thumbnail_id', true)); ?>">Nordestina</button>
-			<button type="button" class="category-button"><img
-					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(21, 'thumbnail_id', true)); ?>">Vegana</button>
-			<button type="button" class="category-button"><img
-					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(20, 'thumbnail_id', true)); ?>">Massas</button>
-			<button type="button" class="category-button"><img
-					src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(22, 'thumbnail_id', true)); ?>">Japonesa</button>
-		</div>
-	</section>
-
-	<section class="foods-section">
-		<h2 class=category-h2>Pratos</h2>
-		<h3 class="foods-h3"> Comida -->
-			<?php echo get_cat_name($category_id = 19);
-			?>
-
-		</h3>
-		<br>
-		<div class="searchs-left-div">
-			<p>Buscar por nome: </p>
-			<input type="text" class="input-search">
-		</div>
-		<div class="searchs-right-div">
-			<p>Filtro de preço</p>
-			De: <input type="number" class="input-search" id="price-search"> Até: <input type="number"
-				class="input-search" id="price-search">
+		<?php endif; ?>
 
 
-	</section>
+		<!-- coding sections -->
 
-	<!-- end coding sections -->
+		<section class="category-section">
+			<h2 class="category-h2">Selecione uma Categoria</h2>
+			<div class="category-cards">
+				<button type="button" class="category-button"><img
+						src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(19, 'thumbnail_id', true)); ?>">Nordestina</button>
+				<button type="button" class="category-button"><img
+						src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(21, 'thumbnail_id', true)); ?>">Vegana</button>
+				<button type="button" class="category-button"><img
+						src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(20, 'thumbnail_id', true)); ?>">Massas</button>
+				<button type="button" class="category-button"><img
+						src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(22, 'thumbnail_id', true)); ?>">Japonesa</button>
+			</div>
+		</section>
+
+		<section class="foods-section">
+			<h2 class=category-h2>Pratos</h2>
+			<h3 class="foods-h3"> Comida -->
+				<?php echo get_cat_name($category_id = 19);
+				?>
+
+			</h3>
+			<br>
+			<div class="searchs-left-div">
+				<p>Buscar por nome: </p>
+				<input type="text" class="input-search">
+			</div>
+			<div class="searchs-right-div">
+				<p>Filtro de preço</p>
+				De: <input type="number" class="input-search" id="price-search"> Até: <input type="number"
+					class="input-search" id="price-search">
 
 
+		</section>
+
+		<!-- end coding sections -->
+
+
+		<?php
+		/**
+		 * Hook: woocommerce_archive_description.
+		 *
+		 * @hooked woocommerce_taxonomy_archive_description - 10
+		 * @hooked woocommerce_product_archive_description - 10
+		 */
+		do_action('woocommerce_archive_description');
+		?>
+	</header>
+
+</div>
+<div class="mid-body-div">
 	<?php
-	/**
-	 * Hook: woocommerce_archive_description.
-	 *
-	 * @hooked woocommerce_taxonomy_archive_description - 10
-	 * @hooked woocommerce_product_archive_description - 10
-	 */
-	do_action('woocommerce_archive_description');
-	?>
-</header>
+	if (woocommerce_product_loop()) {
 
+		/**
+		 * Hook: woocommerce_before_shop_loop.
+		 *
+		 * @hooked woocommerce_output_all_notices - 10
+		 * @hooked woocommerce_result_count - 20
+		 * @hooked woocommerce_catalog_ordering - 30
+		 */
+		do_action('woocommerce_before_shop_loop');
 
-<?php
-if (woocommerce_product_loop()) {
+		woocommerce_product_loop_start();
 
-	/**
-	 * Hook: woocommerce_before_shop_loop.
-	 *
-	 * @hooked woocommerce_output_all_notices - 10
-	 * @hooked woocommerce_result_count - 20
-	 * @hooked woocommerce_catalog_ordering - 30
-	 */
-	do_action('woocommerce_before_shop_loop');
+		if (wc_get_loop_prop('total')) {
+			while (have_posts()) {
+				the_post();
 
-	woocommerce_product_loop_start();
+				/**
+				 * Hook: woocommerce_shop_loop.
+				 */
+				do_action('woocommerce_shop_loop');
 
-	if (wc_get_loop_prop('total')) {
-		while (have_posts()) {
-			the_post();
-
-			/**
-			 * Hook: woocommerce_shop_loop.
-			 */
-			do_action('woocommerce_shop_loop');
-
-			wc_get_template_part('content', 'product');
+				wc_get_template_part('content', 'product');
+			}
 		}
+
+		woocommerce_product_loop_end();
+
+		/**
+		 * Hook: woocommerce_after_shop_loop.
+		 *
+		 * @hooked woocommerce_pagination - 10
+		 */
+		do_action('woocommerce_after_shop_loop');
+	} else {
+		/**
+		 * Hook: woocommerce_no_products_found.
+		 *
+		 * @hooked wc_no_products_found - 10
+		 */
+		do_action('woocommerce_no_products_found');
 	}
 
-	woocommerce_product_loop_end();
+	/**
+	 * Hook: woocommerce_after_main_content.
+	 *
+	 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+	 */
+	do_action('woocommerce_after_main_content');
 
 	/**
-	 * Hook: woocommerce_after_shop_loop.
+	 * Hook: woocommerce_sidebar.
 	 *
-	 * @hooked woocommerce_pagination - 10
+	 * @hooked woocommerce_get_sidebar - 10
 	 */
-	do_action('woocommerce_after_shop_loop');
-} else {
-	/**
-	 * Hook: woocommerce_no_products_found.
-	 *
-	 * @hooked wc_no_products_found - 10
-	 */
-	do_action('woocommerce_no_products_found');
-}
-
-/**
- * Hook: woocommerce_after_main_content.
- *
- * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
- */
-do_action('woocommerce_after_main_content');
-
-/**
- * Hook: woocommerce_sidebar.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
 
 
-/**do_action('woocommerce_sidebar'); */
+	/**do_action('woocommerce_sidebar'); */
 
-
+	?>
+</div>
+<?php
 get_footer('shop');
+?>
