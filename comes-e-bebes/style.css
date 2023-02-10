@@ -26,7 +26,74 @@ html, body {
     overflow-x: hidden;
 }
 
-.products{
-    background-color: #E7FAFE
-    ;
+.woocommerce-products-header{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.category-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-main{
+    background-color: #E7FAFE;
+}
+
+.category-h2{
+    font-size: 2.5em;
+    padding: 0.7rem;
+}
+
+.foods-h3{
+    font-size: 1.5em;
+}
+
+.woocommerce-shop{
+    background-color: #E7FAFE;
+    font-family: 'Bellota Text';
+}
+
+.searchs-left-div{
+    margin: 1rem;
+}
+
+.input-search{
+    -webkit-appearance: none;
+    outline:0;
+    width: 30%;
+    background: none;
+    margin: 0.5rem;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #6A066D;
+}
+
+#price-search{
+    width: 8%;
+}
+
+.searchs-right-div{
+    margin: 1rem;
+}
+
+.woocommerce-product-gallery__image{
+    margin: 7rem;
+}
+
+.entry-title{
+    font-size: 2rem;
+}
+
+.woocommerce-ordering{
+    -webkit-appearance: none;
+    outline:0;
+    width: 10%;
+    background: none;
+    margin: 1rem;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #6A066D;
 }

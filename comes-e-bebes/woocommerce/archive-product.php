@@ -15,9 +15,13 @@
  * @version 3.4.0
  */
 
+
+
 defined('ABSPATH') || exit;
 
+
 get_header('shop');
+
 
 /**
  * Hook: woocommerce_before_main_content.
@@ -32,6 +36,7 @@ get_header('shop');
 /**do_action('woocommerce_before_main_content');*/
 
 ?>
+
 <header class="woocommerce-products-header">
 	<?php if (apply_filters('woocommerce_show_page_title', true)): ?>
 
@@ -64,11 +69,12 @@ get_header('shop');
 		<br>
 		<div class="searchs-left-div">
 			<p>Buscar por nome: </p>
-			<input>
+			<input type="text" class="input-search">
 		</div>
 		<div class="searchs-right-div">
 			<p>Filtro de preço</p>
-			De: <input> Até: <input>
+			De: <input type="number" class="input-search" id="price-search"> Até: <input type="number"
+				class="input-search" id="price-search">
 
 
 	</section>

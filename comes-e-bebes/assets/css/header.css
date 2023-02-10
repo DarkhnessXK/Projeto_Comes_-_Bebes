@@ -100,32 +100,7 @@
     cursor: pointer;
 }
 
-.woocommerce-products-header{
-    background-color: #E7FAFE
-    ;
-    display: flex;
-    flex-direction: column;
-    
-}
 
-.category-cards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.site-main{
-    background-color: #E7FAFE
-    ;
-}
-
-.category-h2{
-    font-size: 2.5em;
-}
-
-.foods-h3{
-    font-size: 1.5em;
-}
 
         
 
