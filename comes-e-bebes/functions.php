@@ -31,6 +31,25 @@ add_action( 'after_setup_theme', 'comes_e_bebes_add_woocommerce_support' );
 add_action( 'wp_enqueue_scripts', 'comesbebes_enqueue_scripts' );
 
 
+function filter_woocommerce_account_orders_columns( $columns ) {
+    
+    $columns['order-actions'] = __( '', 'woocommerce' );
+
+    return $columns;
+}
+add_filter( 'woocommerce_account_orders_columns', 'filter_woocommerce_account_orders_columns', 10, 1 );
+
+
+function custom_remove_downloads_from_my_account( $items ) {
+    unset( $items['downloads'] );
+    unset( $items['edit-account'] );
+    $items['edit-address'] = "Endereços";
+    return $items;
+   }
+
+   
+add_filter( 'woocommerce_account_menu_items', 'custom_remove_downloads_from_my_account' );
+
 
 
 
