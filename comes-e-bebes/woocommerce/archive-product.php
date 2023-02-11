@@ -47,29 +47,36 @@ get_header('shop');
 
 		<section class="category-section">
 			<h2 class="category-h2">Selecione uma Categoria</h2>
-			<div class="category-cards">
-				<button type="button" class="category-button"><img
-						src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(19, 'thumbnail_id', true)); ?>">Nordestina</button>
-				<button type="button" class="category-button"><img
-						src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(21, 'thumbnail_id', true)); ?>">Vegana</button>
-				<button type="button" class="category-button"><img
-						src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(20, 'thumbnail_id', true)); ?>">Massas</button>
-				<button type="button" class="category-button"><img
-						src="<?php echo wp_get_attachment_url(get_woocommerce_term_meta(22, 'thumbnail_id', true)); ?>">Japonesa</button>
-			</div>
+
 		</section>
+
+	<?php wp_nav_menu(['menu' => 'Categoria']);  ?>
 
 		<section class="foods-section">
 			<h2 class=category-h2>Pratos</h2>
-			<h3 class="foods-h3"> Comida -->
-				<?php echo get_cat_name($category_id = 19);
+			<h3 class="foods-h3">
+				<?php global $wp;
+				$current_url = home_url(add_query_arg(array(), $wp->request));
+				if ($current_url == 'http://comesebebes.local/product-category/nordestina') {
+					echo 'Pratos Nordestinos';
+				} else if ($current_url == 'http://comesebebes.local/product-category/vegana') {
+					echo 'Pratos Veganos';
+				} else if ($current_url == 'http://comesebebes.local/product-category/massas') {
+					echo 'Pratos de Massas';
+				} else if ($current_url == 'http://comesebebes.local/product-category/japonesa') {
+					echo 'Pratos Japoneses';
+				} else {
+					echo 'Escolha uma Categoria';
+				}
 				?>
 
 			</h3>
 			<br>
 			<div class="searchs-left-div">
 				<p>Buscar por nome: </p>
-				<input type="text" class="input-search">
+				<form>
+					<input type="text" class="input-search">
+				</form>
 			</div>
 			<div class="searchs-right-div">
 				<p>Filtro de preço</p>

@@ -11,13 +11,17 @@ define('WOOCOMMERCE_DIR', ROOT_DIR . '/woocommerce');
 
 
 
-function comes_e_bebes_add_woocommerce_support() {
-    add_theme_support( 'woocommerce' );
+function comes_e_bebes_add_woocommerce_support()
+{
+    add_theme_support('woocommerce');
 }
 
-function comesbebes_edit_account_painel() {
-    add_edit_account_form( 'woocommerce');
+function comesbebes_edit_account_painel()
+{
+    add_edit_account_form('woocommerce');
 }
+
+
 
 //Includes
 
@@ -31,20 +35,40 @@ include_once(INCLUDES_DIR . '/setup-theme.php');
 add_action('wp_enqueue_scripts', 'comesbebes_enqueue_style');
 add_action('after_setup_theme', 'comesbebes_setup_theme');
 add_action('after_theme_support', 'comesbebes_setup-theme');
-add_action( 'after_setup_theme', 'comes_e_bebes_add_woocommerce_support' );
-
-add_action( 'wp_enqueue_scripts', 'comesbebes_enqueue_scripts' );
-add_action ('woocommerce_after_edit_account_form', 'comesbebes_edit_account_painel');
-
-
+add_action('after_setup_theme', 'comes_e_bebes_add_woocommerce_support');
+add_filter('wp_nav_menu_objects', 'categoria');
+add_action('wp_enqueue_scripts', 'comesbebes_enqueue_scripts');
+add_action('woocommerce_after_edit_account_form', 'comesbebes_edit_account_painel');
 
 
+function categoria($itens)
+{
+    foreach ($itens as $item) {
+        $thumbnail_id = get_term_meta($item->object_id, 'thumbnail_id', true);
+        $image = wp_get_attachment_url($thumbnail_id);
+        $css = 'background-image: url(' . $image . ')';
+        $item->title =
+
+            '
+    <div class=conter-cate>
+    <div class="Categoria-content" style="' . $css . ';">
+    <div class="Categoria-titulo">
+        <p class="Title">' . $item->title . '</p>
+    </div>
+    </div>
+
+    </div>';
+    }
+    return $itens;
+}
 
 
 
-function custom_checkout_fields( $fields ) {
-    
-    
+
+function custom_checkout_fields($fields)
+{
+
+
 
     $billing = [
         "billing_email" => [
@@ -136,10 +160,10 @@ function custom_checkout_fields( $fields ) {
 
 
     return $custom_fields;
- }
+}
 
 
- add_filter( 'woocommerce_checkout_fields', 'custom_checkout_fields' );
+add_filter('woocommerce_checkout_fields', 'custom_checkout_fields');
 
 
 ?>
