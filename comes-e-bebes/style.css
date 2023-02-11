@@ -24,6 +24,7 @@ Description: Tema para o restaurante Comes & Bebes.
 
 html, body {
     overflow-x: hidden;
+   
 }
 
 .woocommerce-products-header{
@@ -122,4 +123,8 @@ html, body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+.products{
+    background-color: #E7FAFE
+    ;
 }

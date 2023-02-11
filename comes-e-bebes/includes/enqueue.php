@@ -16,6 +16,8 @@ function comesbebes_enqueue_style(){
     wp_register_style('comesbebes-home', STYLE_DIR . '/home.css', [], '1.0.0', false);
     wp_register_style('comesbebes-painel', STYLE_DIR . '/painel.css', [], '1.0.0', false);
     wp_register_style('comesbebes-checkout-form', STYLE_DIR . '/checkout-form.css', [], '1.0.0', false);
+    wp_register_style('comesbebes-myacc', STYLE_DIR . '/myacc.css', [], '1.0.0', false);
+
 
     
     wp_enqueue_style('comesbebes-bellota-text-font');
@@ -30,6 +32,8 @@ function comesbebes_enqueue_style(){
     wp_enqueue_style('comesbebes-home');
     wp_enqueue_style('comesbebes-painel');
     wp_enqueue_style('comesbebes-checkout-form');
+    wp_enqueue_style('comesbebes-myacc');
+
     
 }
 
