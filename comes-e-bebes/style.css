@@ -141,6 +141,12 @@ html, body {
     font-size: 2rem;
 }
 
+.add_to_cart_button{
+    background-color: #7E3481 !important;
+    color: white !important;
+    font-family: Arial !important;
+}
+
 .woocommerce-ordering{
     -webkit-appearance: none;
     outline:0;
