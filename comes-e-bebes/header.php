@@ -90,7 +90,7 @@
             
             <div class="pedido_button"><a href="/shop">Faça um pedido</a></div>
             <div id="comesbebes_cart_icon"><img class="header_icon" src="<?php echo IMAGES_DIR . "/cart.png"?>" alt=""></div>
-            <a href="/"><img class="header_icon" src="<?php echo IMAGES_DIR . "/account.png"?>" alt=""></a>
+            <a href="/my-account"><img class="header_icon" src="<?php echo IMAGES_DIR . "/account.png"?>" alt=""></a>
 
         </div>
     </div>

@@ -22,15 +22,19 @@ defined( 'ABSPATH' ) || exit;
  *
  * @since 2.6.0
  */
-do_action( 'woocommerce_account_navigation' ); ?>
 
-<div class="woocommerce-MyAccount-content">
-	<?php
-		/**
-		 * My Account content.
-		 *
-		 * @since 2.6.0
-		 */
-		do_action( 'woocommerce_account_content' );
-	?>
+
+
+
+do_action( 'woocommerce_account_navigation' ); 
+
+
+?>
+
+<div class="comesbebes_dashboard">
+	<div class="inner_comesbebes_dashboard">
+		<div class="comesbebes_dashboard_message">
+			<?php do_action( 'woocommerce_account_content' ); ?>
+		</div>
+	</div>
 </div>

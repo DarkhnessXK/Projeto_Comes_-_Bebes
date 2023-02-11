@@ -16,6 +16,7 @@ function comes_e_bebes_add_woocommerce_support()
     add_theme_support('woocommerce');
 }
 
+<<<<<<< HEAD
 function comesbebes_edit_account_painel()
 {
     add_edit_account_form('woocommerce');
@@ -23,6 +24,8 @@ function comesbebes_edit_account_painel()
 
 
 
+=======
+>>>>>>> eb224ac6be6bb735078cc3be660425c3e056ae13
 //Includes
 
 include_once(INCLUDES_DIR . '/enqueue.php');
@@ -61,9 +64,28 @@ function categoria($itens)
     }
     return $itens;
 }
+add_action( 'wp_enqueue_scripts', 'comesbebes_enqueue_scripts' );
 
 
 
+function filter_woocommerce_account_orders_columns( $columns ) {
+    
+    $columns['order-actions'] = __( '', 'woocommerce' );
+
+    return $columns;
+}
+add_filter( 'woocommerce_account_orders_columns', 'filter_woocommerce_account_orders_columns', 10, 1 );
+
+
+function custom_remove_downloads_from_my_account( $items ) {
+    unset( $items['downloads'] );
+    unset( $items['edit-account'] );
+    $items['edit-address'] = "Endereços";
+    return $items;
+   }
+
+   
+add_filter( 'woocommerce_account_menu_items', 'custom_remove_downloads_from_my_account' );
 
 function custom_checkout_fields($fields)
 {
