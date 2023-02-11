@@ -15,10 +15,6 @@ function comes_e_bebes_add_woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
-function comesbebes_edit_account_painel() {
-    add_edit_account_form( 'woocommerce');
-}
-
 //Includes
 
 include_once(INCLUDES_DIR . '/enqueue.php');
