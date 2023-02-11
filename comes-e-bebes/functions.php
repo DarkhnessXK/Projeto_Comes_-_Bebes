@@ -16,7 +16,6 @@ function comes_e_bebes_add_woocommerce_support()
     add_theme_support('woocommerce');
 }
 
-<<<<<<< HEAD
 function comesbebes_edit_account_painel()
 {
     add_edit_account_form('woocommerce');
@@ -24,8 +23,6 @@ function comesbebes_edit_account_painel()
 
 
 
-=======
->>>>>>> eb224ac6be6bb735078cc3be660425c3e056ae13
 //Includes
 
 include_once(INCLUDES_DIR . '/enqueue.php');
