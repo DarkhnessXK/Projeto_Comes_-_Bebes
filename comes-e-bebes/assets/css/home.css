@@ -79,40 +79,39 @@
 /* corpo da loja */
 
 .corpo-loja {
-    background-color: #E5E5E5;
-    padding-top: 62px;
+    background-color: #E7FAFE;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.corpo-loja-div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .h3-custom {
     font-family: "Bellota Text" , sans-serif;
-    font-style: normal;
-    font-size: 2rem;
-    line-height: 40px;
-    line-height: 100%;
-    color: #333333;
-    align-self: left;
-    width: 358px;
-    height: 40px;
-    margin-left: 541px;
+    display: flex;
+}
+
+.topo{
+    color: black;
 }
 
 .h4-custom {
     font-family: "Bellota Text", sans-serif;
-    font-style: bold;
     font-size: 1.5rem;
-    line-height: 30px;
     line-height: 100%;
     color: #000000;
+    padding-left: 2rem;
 }
 
-.pratos-principais {
-    width: 1047px;
-    width: 100%;
-    height: 259px;
-    margin-top: 48px;
-    margin-left: 196px;
-    margin-bottom: 37px;
-}
 
 
 .tipos {
@@ -122,12 +121,6 @@
     margin-right: 29px;
 }
 
-.pratos-do-dia {
-    width: 1047px;
-    width: 100%;
-    margin-left: 196px;
-    margin-bottom: 57px;
-}
 
 .tipos2 {
     width: 240px;
@@ -136,12 +129,15 @@
     margin-right: 29px;
 }
 
+.botao-opcoes{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+
 .button_options{
-    width: 235px;
-    height: 41px;
-    margin-top: 48px;
-    margin-left: 602px;
-    margin-bottom: 48px;
+    width: 15rem;
+    height: 2.5rem;
     background-color: #F5C661;
     fill: solid;
     border: 0;
