@@ -151,11 +151,18 @@ html, body {
     -webkit-appearance: none;
     outline:0;
     width: 12.7%;
-    background: none;
     margin: 1rem;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid #6A066D;
+}
+
+.orderby{
+    -webkit-appearance: none;
+    background:none;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
 }
 
 .mid-body-div{
